@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  padding: 30px;
+}
+
+.container {
+  height: 400px;
+  width: 600px;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(220, 20, 60, 0.20);
+  border-radius: 8px;
+}
+
+.pomodoro-box {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.pomodoro-number-box {
+  align-self: center;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.pomodoro-start-box {
+  align-self: center;
+}
+
+.pomodoro-start-box button {
+  height: 40px;
+  width: 100px;
+  border: solid rgb(155, 42, 42);
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
