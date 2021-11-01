@@ -43,13 +43,14 @@ body {
   text-shadow: 4px 2px rgba(180, 98, 98, 0.733);
 }
 
-.pomodoro-start-box {
+.pomodoro-buttons {
   align-self: center;
 }
 
-.pomodoro-start-box button {
+.pomodoro-buttons button {
   height: 40px;
   width: 100px;
+  margin-right: 10px;
   border: solid rgba(155, 42, 42, 0.548);
   border-radius: 8px;
   font-size: 20px;
@@ -58,12 +59,13 @@ body {
   box-shadow: 2px 2px rgba(155, 42, 42, 0.548) ;
 }
 
-.pomodoro-start-box button:hover {
+.pomodoro-buttons button:hover {
   background-color: rgba(184, 105, 121, 0.2);
 }
 
-.pomodoro-start-box button:active {
+.pomodoro-buttons button:active {
     background-color:rgba(184, 105, 121, 0.2);
+    border: solid rgba(155, 42, 42, 0.774);
     box-shadow: 2px 2px rgba(155, 42, 42, 0.774);
     transform: translateY(4px);
 }
