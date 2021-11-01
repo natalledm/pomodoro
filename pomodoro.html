@@ -14,11 +14,14 @@
   <div class="container">
     <div class="pomodoro-box">
       <div class="pomodoro-number-box">
-        <span class="pomodoro-timer">25:00</span>
+        <span id="pomodoro-timer">
+          <span id="pomodoro-minutes">25</span>:<span id="pomodoro-seconds">00</span>
+        </span>
       </div>
       <div class="pomodoro-buttons">
-        <button class="pomodoro-buttons-start">start</button>
-        <button class="pomodoro-buttons-stop">stop</button>
+        <button id="pomodoro-start">start</button>
+        <button id="pomodoro-pause" class="hide">pause</button>
+        <button id="pomodoro-stop" class="hide">stop</button>
       </div>
     </div>
   </div>
