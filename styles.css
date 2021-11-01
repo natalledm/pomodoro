@@ -29,15 +29,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  border: solid rgba(155, 42, 42, 0.548);
+  border-radius: 8px;
 }
 
 .pomodoro-number-box {
   align-self: center;
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 700;
   letter-spacing: 20px;
   padding-left: 20px;
   padding-bottom: 10px;
+  text-shadow: 4px 2px rgba(180, 98, 98, 0.733);
 }
 
 .pomodoro-start-box {
@@ -47,9 +50,20 @@ body {
 .pomodoro-start-box button {
   height: 40px;
   width: 100px;
-  border: solid rgb(155, 42, 42);
+  border: solid rgba(155, 42, 42, 0.548);
   border-radius: 8px;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 2px;
+  box-shadow: 2px 2px rgba(155, 42, 42, 0.548) ;
+}
+
+.pomodoro-start-box button:hover {
+  background-color: rgba(184, 105, 121, 0.2);
+}
+
+.pomodoro-start-box button:active {
+    background-color:rgba(184, 105, 121, 0.2);
+    box-shadow: 2px 2px rgba(155, 42, 42, 0.774);
+    transform: translateY(4px);
 }
