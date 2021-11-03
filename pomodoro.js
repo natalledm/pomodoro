@@ -12,7 +12,6 @@ const seconds = document.getElementById("pomodoro-seconds");
 let mins;
 let secs;
 let interval;
-let continueInterv;
 
 
 function countdown() {
@@ -41,7 +40,7 @@ function countdown() {
   seconds.innerText = secondsText;
 }
 
-function cleanInnerText() {
+function changeInnerText() {
   mins = 25;
   secs = 0;
   secondsText = '0' + secs;
@@ -50,7 +49,7 @@ function cleanInnerText() {
 }
 
 function start() {
-  cleanInnerText();
+  changeInnerText();
   interval = setInterval(countdown, 1000);
   btnStart.classList.add("hide");
   btnPause.classList.remove("hide");
@@ -60,8 +59,7 @@ function start() {
 
 function stop() {
   clearInterval(interval);
-  clearInterval(continueInterv);
-  cleanInnerText();
+  changeInnerText();
   btnStart.classList.remove("hide");
   btnRestart.classList.add("hide");
   btnPause.classList.add("hide");
@@ -77,17 +75,9 @@ function pause() {
 }
 
 function rmvPause() {
-  minutes.innerText = mins;
-  if(mins < 10) {
-    minutesText = '0' + mins;
-  }
-  seconds.innerText = secs;
-  if(secs < 10) {
-    secondsText = '0' + secs;
-    secondsText.innerText = secondsText;
-  }
-  continueInterv = setInterval(countdown, 1000);
+  interval = setInterval(countdown, 1000);
   btnContinue.classList.add("hide");
+  btnPause.classList.remove("hide");
   btnStart.classList.add("hide");
 }
 
